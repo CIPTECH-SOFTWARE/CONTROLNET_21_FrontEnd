@@ -1,0 +1,48 @@
+<!-- <div class="container mt-4">
+  <div class="row">
+    <h3>Listado</h3>
+
+  </div>
+  <br>
+  <table class="table">
+    <thead>
+      <th>Nro</th>
+      <th>Nombre</th>
+      <th>Estado</th>
+      <th>Estado</th>
+      <th>Estado</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let est of listEstudiantes;let i=index" [ngSwitch]="est.estado">
+        <td>{{i+1}}</td>
+        <td>{{est.nombre}}</td>
+        <td [ngStyle]="{'font-style': est.estado==='Promovido'?  'italic':'normal'}">{{est.estado}}</td>
+        <td >
+          <span [ngClass]="est.estado==='Promovido'? 'badge badge-success':'badge badge-secondary' ">
+            {{est.estado}}
+          </span>
+          
+        </td>
+
+        <td >
+          <span *ngSwitchCase="'Promovido'" class= "badge badge-success">
+            {{est.estado}}
+          </span>
+          <span *ngSwitchCase="'Regular'" class= "badge badge-secondary">
+            {{est.estado}}
+          </span>
+
+          <span *ngSwitchCase="'Libre'" class= "badge badge-danger">
+            {{est.estado}}
+          </span>
+
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+
+<router-outlet></router-outlet>
+
+

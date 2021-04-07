@@ -1,0 +1,49 @@
+ 
+  <!-- <div class=" border-bottom shadow-sm"> style="background-color: #0f5d84;" -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-cubico-primary" >
+    <img src="../../../../assets/img/logoW3.png"  class="d-inline-block align-top" alt="">
+    <!-- <a class="navbar-brand ml-3" href="#">{{almacen}}</a> -->
+    <span class="d-block p-2 bg-cubico-secondary text-white ml-5">{{empresa}}</span>
+    <span class="d-block p-2 bg-cubico-accent text-white">{{sede}}</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+       
+        <li class="nav-item dropdown mr-5">
+          <a class="nav-link dropdown-toggle text-light" 
+              href="#" id="navbarDropdownSistemas" role="button" 
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-laptop mr-2"></i>Sistemas<span class="sr-only">(current)</span>
+          </a>
+          <div class="dropdown-menu align-items-center" aria-labelledby="navbarDropdownSistemas">
+            <a class="dropdown-item" href="#">Empresas</a>
+            <a class="dropdown-item" routerLink="/dashboard/cambiarPassword">Centro costo</a>
+            <div class="dropdown-divider"></div>
+            
+          </div>
+        </li>
+        <li class="nav-item dropdown mr-5">
+          <a class="nav-link dropdown-toggle text-light" 
+              href="#" id="navbarDropdown" role="button" 
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="far fa-user"></i> {{nombreUsuario}}
+          </a>
+          <div class="dropdown-menu align-items-center" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Mi Perfil</a>
+            <a class="dropdown-item" routerLink="/dashboard/cambiarPassword">Cambiar contraseña</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" (click)="logOut()">Cerrar sesión</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+        
+        </li>
+      </ul>
+    
+    </div>
+  </nav>
+  <!-- </div> -->

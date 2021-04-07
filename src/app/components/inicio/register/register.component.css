@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.btn-cubico-primary{
+    background-color: #193b48;
+    border-color: #193b48;
+}
+.btn-cubico-secondary{
+    background-color: #7daf00;
+    border-color: #7daf00;
+}

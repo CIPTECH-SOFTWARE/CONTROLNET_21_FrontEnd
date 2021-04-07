@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row" style="width: 100%;">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card text-center" style="padding: 20px;">
+                <h3 class="cubico-font-color-secondary">Registrarse</h3>
+               
+                <app-loading *ngIf="loading" style="padding: 20px;"></app-loading>
+                <form [formGroup]="register" (ngSubmit)="registrarUsuario()">
+                    <div class="form-group form-label-group" style="text-align: start;">
+                        <input type="text" class="form-control" placeholder="Usuario" formControlName="usuario" id="inputUsuario">
+                        <label for="inputUsuario">Usuario</label>
+                        <span class="text-danger ml-2" *ngIf="register.get('usuario').hasError('required') && register.get('usuario').touched">
+                            El usuario <strong>es requerido</strong>
+                        </span>
+                    </div>    
+                    <div class="form-group form-label-group" style="text-align: start;">
+                        <input type="password" class="form-control" placeholder="Contraseña" formControlName="password" id="inputPass">
+                        <label for="inputPass">Contraseña</label>
+                        <span class="text-danger ml-2" *ngIf="register.get('password').hasError('required') && register.get('password').touched">
+                            La contraseña <strong>es requerida</strong>
+                        </span>
+                        <span class="text-danger ml-2" *ngIf="register.get('password').hasError('minlength') && register.get('password').touched">
+                            La contraseña debe tener como mínimo <strong>4 carácteres</strong>
+                        </span>
+
+                    </div>    
+                    <div class="form-group form-label-group" style="text-align: start;">
+                        <input type="password" class="form-control" placeholder="Repetir contraseña" formControlName="confirmPassword" id="inputRptPass">
+                        <label for="inputRptPass">Repetir contraseña</label>
+                        <span class="text-danger ml-2" 
+                        *ngIf="register.hasError('notSame') ">
+                            contraseñas <strong>distintas</strong>
+                        </span>
+
+                    </div>    
+                    <div class="form-group">
+                        <button class="btn btn-primary mr-2 btn-cubico-primary" 
+                        [disabled]="register.invalid"
+                        type="submit">Aceptar</button>
+                        <button class="btn btn-secondary btn-cubico-secondary" routerLink="/inicio/login">Volver</button>
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
