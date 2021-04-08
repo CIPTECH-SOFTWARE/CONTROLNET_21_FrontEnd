@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
 
 .bg-cubico-primary {
   background-color: #14142c !important;
@@ -19,6 +20,11 @@
     background-color: #14142c;
     border-color: #0f5d84;
 }
+.btn-cubico-primary_intesive{
+  background: radial-gradient(#0f5d84,#14142c);
+  border-color: #0f5d84;
+  
+}
 .btn-cubico-secondary{
     background-color: #83bb24;
     border-color: #83bb24;
@@ -26,6 +32,15 @@
 .cubico-link{
     color: #83bb24;
     cursor: pointer;
+}
+.cubico-link-intensive{
+  color: #83bb24;
+  cursor: pointer;
+  font-weight: bold;
+}
+.cubico-link_secundary{
+  color: #0f5d84;
+  cursor: pointer;
 }
 .cubico-font-color-primary{
     color: #14142c;

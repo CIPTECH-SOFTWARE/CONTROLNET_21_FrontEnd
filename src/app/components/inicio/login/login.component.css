@@ -9,11 +9,32 @@ h3{
     font-family: 'Rowdies',cursive;
 }
 .btn-cubico-primary{
+    background:radial-gradient(#193b48,#181818);
     background-color: #193b48;
     border-color: #193b48;
+    
 }
 .btn-cubico-secondary{
     background-color: #7daf00;
     border-color: #7daf00;
 }
 
+.img-logo{
+    
+    width: 100%;
+    padding: 30px;
+  
+}
+.container-logo
+{
+border-radius: 100px;
+width: 80%;
+background: radial-gradient(#193b48,#181818);
+
+}
+.container-login{
+    align-items: center;
+    border-radius: 150px;
+    background: linear-gradient(rgb(0, 0, 0,0.3),rgb(124, 0, 0,0.3));
+    box-shadow: 7px 7px 60px#7daf00;
+}
