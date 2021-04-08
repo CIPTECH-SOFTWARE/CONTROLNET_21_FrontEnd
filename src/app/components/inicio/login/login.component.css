@@ -6,13 +6,32 @@
 }
 
 h3{
-    font-family: 'Rowdies',cursive;
+    font-family: "Poppins", cursive;
+    color:  #cdf85f;
+    font-size: 1.9rem;
+   
+    margin-bottom: 10px;
 }
 .btn-cubico-primary{
     background:radial-gradient(#193b48,#181818);
     background-color: #193b48;
     border-color: #193b48;
+    width: 150px;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
     
+}
+.btn-cubico-primary:hover{
+    background-color: #7daf00;
+
 }
 .btn-cubico-secondary{
     background-color: #7daf00;
@@ -37,4 +56,8 @@ background: radial-gradient(#193b48,#181818);
     border-radius: 150px;
     background: linear-gradient(rgb(0, 0, 0,0.3),rgb(124, 0, 0,0.3));
     box-shadow: 7px 7px 60px#7daf00;
+}
+
+.txt-box{
+    border-radius: 150px;
 }
