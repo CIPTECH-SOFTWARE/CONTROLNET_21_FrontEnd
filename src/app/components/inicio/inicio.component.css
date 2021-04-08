@@ -1,6 +1,7 @@
 .layout{
-    background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(../../../assets/img/fondo1.jpg);
-    
+    background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(../../../assets/img/fondo1.jpg) ;
     background-size: cover;
     background-position: center;
+    width: 100%;
+    
 }
